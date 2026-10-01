@@ -1,74 +1,281 @@
-# Hacked
-## Introduction:
-+ Tool Hacked is a Kali Linux hacking tools installer for Termux and linux system. Tool Hacked was developed for Termux and linux based systems. Using Tool Hacked, you can install almost 1000+ hacking tools in Termux (android) and other Linux based distributions. Tool Hacked is available for Ubuntu and Debian also.
-+ Tool Hacked is an installation tool for installing tools. this tool makes it easy for you. so you don't need to type git clone or look for the github repository. You only have to choose the number. which tool you want to install. there are 1000+ tools ready for install
+<div align="center">
 
-## Advantages:
-+ The advantage of installing this tool is that you don't have to search for a tool manually every time you wanna perform a different type of attack you can just use Tool Hacked to suggest you the tools that are suitable for you.
-+ Now when you have found your tool you just have to select the tool by typing its Tool number and the Tool will be automatically installed in your Termux and you will instantly able to use it.
+# ⃤ H A C K E D ⃤
 
-## Overview:
-+ Tool Hacked generation of Tool Hacked, This tools is a super power, open source, fast, and automatic tools add your favorite github users and download repository via Tool Hacked, add more github users and find another tools via Tool Hacked
-+ You can find tools by just using alphabet letters, Like if you will search for 'A' it will show all tool whatever tool starting letter is 'A'
-For Examples
-* For letter 'A' it will show you tools like this
-+ A-Rat
-+ Anonimizer
-+ AndroidPinCrack
-+ automizer
-+ aux
-+ etc.
+### ✦ The Massive Tools Installer for Termux & Linux ✦
 
-## Operating System Requirements:
-+ Tool Hacked works on any of the following operating systems:
-* Android (Using the Termux App)
+![Version](https://img.shields.io/badge/Version-2.0-198c6c?style=for-the-badge&logo=python&logoColor=white)
+![Tools](https://img.shields.io/badge/Tools-919%20verified-2d4a2d?style=for-the-badge&logo=github&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Termux-ab3737?style=for-the-badge&logo=linux&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-8a6d3b?style=for-the-badge&logo=open-source-initiative&logoColor=white)
 
+**Nine hundred nineteen tools. One installer. Zero dead links.**
 
-## Tested on:
-+ Termux
+Hacked turns 19,000 lines of copy-pasted shell menus into a clean catalog:
+every repository verified live, every redirect followed, one generic install
+engine — browse A–Z, by category, or search, and install with a single keypress.
 
+</div>
 
-## Installation:
-+ Following are the complete installation commands, Enter all commands one by one in your terminal
-+ ```apt-get update -y```
-+ ```apt-get upgrade -y```
-+ ```apt-get install git -y```
-+ ```apt-get install python -y```
-+ ```apt-get install figlet -y```
-+ ```git clone https://github.com/MrHacker-X/Hacked.git/```
-+ ```cd Hacked```
-+ ```chmod +x *```
-+ ```python hacked.py```
+---
 
-## Single line Command:
+## 📋 Table of Contents
+
+- [🎯 Why Hacked?](#-why-hacked)
+- [🧭 Tool Purpose](#-tool-purpose)
+- [🚀 Quick Start](#-quick-start)
+- [📦 Installation](#-installation)
+- [✨ Features](#-features)
+- [🔄 What Changed in v2.0](#-what-changed-in-v20)
+- [🖥️ Preview](#️-preview)
+- [🧰 Tech Stack](#-tech-stack)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [👨‍💻 Developer](#-developer)
+
+---
+
+## 🎯 Why Hacked?
+
+> The original Hacked was a 19,000-line wall of ASCII art with ~1,000 raw
+> `git clone` commands frozen in 2021. Today, 64 of those repositories are
+> dead and 53 more have moved — v1 would silently fail or clone abandoned,
+> unmaintained code.
+>
+> **Hacked v2.0 is the same idea, engineered properly.** Every URL was
+> re-verified live before shipping, moved repositories were followed to their
+> new homes, dead ones were dropped, and the whole thing runs on one generic
+> install engine instead of a thousand copy-pasted functions.
+
+---
+
+## 🧭 Tool Purpose
+
+Hacked exists to solve one problem well: **installing third-party security
+tools without the homework**.
+
+1. **A verified catalog** — 919 GitHub repositories, each checked live during
+   the v2.0 build; redirects followed to current owners, dead links removed.
+2. **Three ways to find a tool** — browse alphabetically (A–Z), browse by
+   category (Wi-Fi, web, recon, passwords, exploitation, and more), or search
+   by name with instant results.
+3. **One consistent installer** — shallow clones into `~/Hacked-tools`,
+   optional `install.sh`/`setup.sh` detection per tool, no duplicated logic.
+4. **Batch operations** — install every tool in a filtered list with one
+   confirmation, skip what's already present, and get a summary at the end.
+5. **Stay current** — `Update installed tools` pulls the latest changes for
+   everything you've cloned.
+
+> **What it deliberately is not:** Hacked installs tools, it does not vouch
+> for them. Each tool keeps its own license, quality level, and legal status —
+> you choose what to run.
+
+---
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/MrHacker-X/Hacked.git
+cd Hacked
+bash setup.sh
+python3 hacked.py
 ```
-apt-get update -y;apt-get upgrade -y;apt-get install python -y;apt-get install git -y;apt-get install figlet -y;git clone https://github.com/MrHacker-X/Hacked.git/;cd Hacked;chmod +x *;python hacked.py
+
+First run? Type `7` for the built-in **Doctor** — it verifies Python,
+colorama, git and your network in one shot.
+
+```bash
+python3 hacked.py --doctor        # environment check
+python3 hacked.py -v              # version
+python3 hacked.py -s nmap         # search the catalog
+python3 hacked.py -i Nikto        # install by exact name
 ```
 
-## Some screenshots:
-### Main menu
-![photo](https://raw.githubusercontent.com/MrHacker-X/Hacked/main/.img/menu.jpg?token=AQW5VDIRK5TSH3BNP6BINN3AZV33M)
-### Find tools by alphabetically
-![photo](https://raw.githubusercontent.com/MrHacker-X/Hacked/main/.img/alphabet.jpg?token=AQW5VDL4BKINV6XNJBYCBE3AZV74Y)
-#### Install all tools in one click
-![photo](https://raw.githubusercontent.com/MrHacker-X/Hacked/main/.img/allinstall.jpg?token=AQW5VDML2RMYSPS67A3P7HLAZV766)
-### About
-![photo](https://raw.githubusercontent.com/MrHacker-X/Hacked/main/.img/about.jpg?token=AQW5VDKUX4DF54CJGVQIL5LAZWAAG)
-### Connect with us
-![photo](https://raw.githubusercontent.com/MrHacker-X/Hacked/main/.img/follow.jpg?token=AQW5VDLMXDK4OESFODJQSD3AZWAC2)
+---
 
-## Warning:
-+ We are not responsible for any misuse or damage caused by this program. use this tool at your own risk!
+## 📦 Installation
 
-<h3><b><i>📡 Connect with us :</i></b></h3>
-<a href="https://github.com/MrHacker-X/"><img align="left" title="Github" alt="Github" width="30px" src="https://raw.githubusercontent.com/MrHacker-X/MrHacker-X/main/assets/github.png" /></a>
-<a href="https://instagram.com/mrhacker.x/"><img align="left" title="Instagram" alt="Instagram" width="30px" src="https://raw.githubusercontent.com/MrHacker-X/MrHacker-X/main/assets/instagram.png" /></a>
-<a href="https://t.me/hackwithalex/"><img align="left" title="Telegram" alt="Telegram" width="30px" src="https://raw.githubusercontent.com/MrHacker-X/MrHacker-X/main/assets/telegram.png" /></a>
-<a href="https://youtube.com/@Technolex/"><img align="left" title="YouTube" alt="YouTube" width="30px" src="https://raw.githubusercontent.com/MrHacker-X/MrHacker-X/main/assets/youtube.png" /></a>
+```bash
+git clone https://github.com/MrHacker-X/Hacked.git
+cd Hacked
+bash setup.sh
+python3 hacked.py
+```
 
-#
-<h3><b><i>🏆 Some popular Repository :</i></b></h3>
+`setup.sh` detects your package manager automatically.
 
-<p align="center"><a href="https://github.com/MrHacker-X/SploitX.git/"><img title="SploitX" src="https://github-readme-stats.vercel.app/api/pin/?username=MrHacker-X&repo=SploitX&theme=radical"></a>
-<p align="center"><a href="https://github.com/MrHacker-X/CloneWeb.git/"><img title="CloneWeb" src="https://github-readme-stats.vercel.app/api/pin/?username=MrHacker-X&repo=CloneWeb&theme=radical"></a>
-<p align="center"><a href="https://github.com/MrHacker-X/termux-fingerprint.git/"><img title="termux-fingerprint" src="https://github-readme-stats.vercel.app/api/pin/?username=MrHacker-X&repo=termux-fingerprint&theme=radical"></a>
+| Platform  | Status       | Notes                                   |
+|-----------|--------------|-----------------------------------------|
+| Kali      | ✅ Supported | apt detected natively                   |
+| Ubuntu    | ✅ Supported | apt detected natively                   |
+| Debian    | ✅ Supported | apt detected natively                   |
+| Parrot    | ✅ Supported | apt detected natively                   |
+| Arch      | ✅ Supported | pacman                                  |
+| Fedora    | ✅ Supported | dnf                                     |
+| openSUSE  | ✅ Supported | zypper                                  |
+| Alpine    | ✅ Supported | apk                                     |
+| Termux    | ✅ Supported | pkg, no root needed                     |
+| Windows   | ⚠️ Partial   | script works; git installs vary         |
+
+<details>
+<summary><b>🔍 Manual installation (no script)</b></summary>
+
+<br>
+
+```bash
+git clone https://github.com/MrHacker-X/Hacked.git
+cd Hacked
+python3 -m pip install --user colorama
+python3 hacked.py
+```
+
+One Python dependency: `colorama`. Everything else is the standard library.
+Without colorama the UI degrades to plain text instead of crashing.
+
+</details>
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🗂️ **919 verified tools** | Every repository checked live at build time — 53 moved repos followed, 64 dead dropped |
+| 🔤 **A–Z browsing** | All 26 letters populated, paginated 30-per-page with next/previous |
+| 🏷️ **Category browse** | Wi-Fi, web, recon, passwords, exploitation, phishing, anonymity, forensics, social, utility |
+| 🔎 **Instant search** | Substring match across the whole catalog, from the menu or `-s` flag |
+| ⚙️ **One install engine** | Single generic `git clone --depth 1` path into `~/Hacked-tools` — no 1,000 copy-pasted functions |
+| 📦 **Batch install** | `'all'` on any filtered list with one confirmation, per-tool progress, final summary |
+| 🔄 **Update command** | Pulls latest for every installed tool in one pass |
+| 🩺 **Doctor** | `--doctor` verifies python, colorama, git, package manager and network |
+| 🛡️ **Safe exit** | Ctrl+C, EOF or `q` anywhere exits cleanly (code 130) — no tracebacks, no self-recursion |
+| 🎨 **Typographic UI** | Block-letter banner, colorama palette, options-only menus — no ASCII-art escape hazards |
+
+<details>
+<summary><b>📖 Category breakdown</b></summary>
+
+<br>
+
+| Category | Tools |
+|----------|-------|
+| Web exploitation | 67 |
+| Utility & environment | 63 |
+| Exploitation | 51 |
+| Social & bots | 50 |
+| Password & hash | 44 |
+| Phishing (authorized testing) | 24 |
+| Wi-Fi & wireless | 23 |
+| Recon & OSINT | 23 |
+| Anonymity & tunneling | 23 |
+| Forensics | 7 |
+| General / uncategorized | 544 |
+
+Categories are a navigation aid — search always covers all 919 tools.
+
+</details>
+
+---
+
+## 🔄 What Changed in v2.0
+
+| | v1.0 (0.98) | v2.0 |
+|---|-------------|------|
+| **Codebase** | 19,384 lines of menus + 1,011 copy-paste install functions | ~670 lines, one generic install engine + data table |
+| **Catalog** | ~1,000 raw entries, 64 dead + 53 moved + 1 DMCA-blocked by 2026 | **919 verified live**, redirects followed, deduped |
+| **Install-all** | 3,000-line sequential loop cloning everything unattended | Per-list batch with confirmation, progress and summary |
+| **Navigation** | Only A–Z menus, one dead "[soon]" category menu | A–Z + 11 categories + search + pagination (n/p) |
+| **Crash safety** | `os.system("python hacked.py")` self-recursion, `exit()` scattered | Central SafeExit, Ctrl+C/EOF/`q` clean (exit 130), errors caught per-screen |
+| **Update support** | None — re-clone by hand | Built-in update pass over `~/Hacked-tools` |
+| **UI** | Box-drawing ASCII art with broken escape mixtures | Block-letter wordmark, colorama palette, clean menus |
+| **Setup** | None shipped | `setup.sh` with package-manager detection + verification |
+| **CLI** | None | `-v/--version`, `--doctor`, `-s search`, `-i install` |
+| **Social links** | "Connect With Us" menu | Removed — no Telegram/Instagram/YouTube links |
+
+---
+
+## 🖥️ Preview
+
+<div align="center">
+<img src="https://i.ibb.co/dJKpD6Yh/Screenshot-From-2026-09-30-23-54-36.png" alt="Hacked v2.0 main menu and doctor check" width="760">
+</div>
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Language | Python 3.8+ (standard library only) |
+| Install engine | `subprocess` + `git clone --depth 1` |
+| UI | colorama palette, auto-disabled on pipes/NO_COLOR |
+| Catalog | Embedded verified JSON (919 entries) |
+| Setup | Bash with pkg/apt/dnf/yum/pacman/zypper/apk detection |
+
+---
+
+## ⚠️ Disclaimer
+
+> **1.** Hacked is an **installer**. It distributes third-party tools written
+> by other authors and carries no warranty for any of them.
+>
+> **2.** You are responsible for what you install and run. Many bundled
+> tools are for **authorized testing only** — attacking systems without
+> explicit written permission is illegal almost everywhere.
+>
+> **3.** Review each tool's repository, license and purpose before use.
+> Inclusion in this catalog is not an endorsement.
+>
+> **4.** The developer is not affiliated with the upstream tool authors and
+> does not maintain their code.
+>
+> **5.** The developer assumes **no liability** for misuse or damage caused
+> by this program. By using Hacked you accept full responsibility for your
+> actions.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome — especially verified tool URLs for the catalog.
+
+```bash
+# 1. Fork the repository
+# 2. Create your branch
+git checkout -b feature/awesome-addition
+# 3. Commit and push
+git commit -m "Add: awesome addition"
+git push origin feature/awesome-addition
+# 4. Open a Pull Request
+```
+
+Found a dead tool URL or a bug? Open an [issue](https://github.com/MrHacker-X/Hacked/issues).
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — see
+[LICENSE](LICENSE) for details.
+
+---
+
+## 👨‍💻 Developer
+
+| | |
+|---|---|
+| **Developer** | MrHacker-X |
+| **GitHub** | [github.com/MrHacker-X](https://github.com/MrHacker-X) |
+| **Email** | contact@vritrasec.com |
+| **Website** | [vritrasec.com](https://vritrasec.com) |
+| **Network** | [link.vritrasec.com](https://link.vritrasec.com) |
+
+---
+
+<div align="center">
+
+**⃤ Hacked ⃤** — *One installer. Every tool. Verified.*
+
+⭐ **Found it useful? Star the repo — it keeps the catalog maintained.** ⭐
+
+</div>
